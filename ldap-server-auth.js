@@ -6,7 +6,7 @@ var ldap = require( 'ldapjs' ),
         password: 'password',
         database: 'database',
     }),
-    tablename: 'users',
+    tablename = 'users',
     server = ldap.createServer();
 
 function authenticate( email, pass, cb ){
